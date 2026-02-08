@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background: #ffe6f0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #d81b60;
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+  background: #fff0f6;
+  padding: 25px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Story Images */
+.story-img {
+  width: 260px;
+  max-width: 90%;
+  border-radius: 15px;
+  margin: 15px auto;
+  display: block;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
+/* Buttons */
+button {
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background: #e91e63;
+  transform: scale(1.05);
+}
+
+/* Yes/No Container */
+.buttons {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  margin-top: 20px;
+}
+
+/* YES button centered */
+#yesBtn {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+  font-size: 18px;
+  padding: 14px 26px;
+  z-index: 2;
+}
+
+/* NO button movable */
+#noBtn {
+  position: absolute;
+  left: 10px;
+  top: 60px;
+  background: #ffc1d6;
+  color: #d81b60;
+  z-index: 2;
+}
+
+.final-img {
+  width: 220px;
+  max-width: 90%;
+  border-radius: 20px;
+  margin: 10px auto 20px;
+  display: block;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  border: 4px solid white;
+}
+
+
+.ticket {
+  background: linear-gradient(135deg, #fff, #ffe6f0);
+  border-radius: 18px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 340px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  border: 2px dashed #ff4081;
+}
+
+/* Decorative hearts background */
+.ticket::before {
+  content: "❤ ❤ ❤ ❤ ❤";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 60px;
+  color: rgba(255,64,129,0.05);
+  transform: rotate(-20deg);
+}
+
+/* Heading style */
+.ticket h3 {
+  text-align: center;
+  color: #ff4081;
+  margin-bottom: 12px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* Details */
+.ticket p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.ticket strong {
+  color: #d81b60;
+}
+
+
+/* Fireworks */
+#fireworks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  button {
+    width: 80%;
+  }
+}
